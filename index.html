@@ -114,6 +114,20 @@
             color: #0d6b52;
             font-weight: 600;
             margin-bottom: 0.5rem;
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1rem 0;
+        }
+        th, td {
+            border: 1px solid #dce3df;
+            padding: 0.6rem;
+            text-align: left;
+            font-size: 0.9rem;
+        }
+        th {
+            background: #0a4d3c;
+            color: white;
         }
         footer {
             text-align: center;
@@ -147,15 +161,15 @@
     <section class="pagina visible" id="inicio">
         <span class="estado">Etapa 1 de 3 – Anteproyecto</span>
         <h2>Bienvenidos</h2>
-        <p>Somos un equipo de estudiantes del <strong>1º BATIN</strong> del Centro Educativo Departamental Municipal Miguela Rodríguez Araujo. Este sitio nace con un objetivo claro: <strong>informar a toda la comunidad educativa</strong> sobre las actividades, eventos y proyectos que se llevan a cabo en nuestra institución.</p>
+        <p>Somos un equipo de estudiantes del <strong>1º BATIN</strong> del Centro Educativo Departamental Miguela Rodríguez Araujo. Este sitio nace con un objetivo claro: <strong>informar a toda la comunidad educativa</strong> sobre las actividades, eventos y proyectos que se llevan a cabo en nuestra institución.</p>
         <p>Hoy el colegio no cuenta con un sitio web oficial, y eso obliga a depender de canales fragmentados que no llegan a todos. Queremos cambiar eso.</p>
 
         <h3>¿Qué buscamos?</h3>
         <ul>
             <li>Centralizar la información institucional en un solo lugar, accesible para todos.</li>
-            <li>Brindar datos veraces y actualizados sobre actividades, horarios, notas y procesos.</li>
+            <li>Brindar datos veraces y actualizados sobre actividades, eventos y horarios.</li>
             <li>Dar a conocer los bachilleratos técnicos disponibles (informática y construcciones civiles).</li>
-            <li>Contar con un apartado intranet exclusivo para docentes.</li>
+            <li>Ofrecer un apartado de información para docentes.</li>
         </ul>
 
         <h3>Nuestro compromiso</h3>
@@ -171,6 +185,9 @@
 
         <h3>La propuesta</h3>
         <p>Crear un <strong>sitio web institucional</strong> que funcione como un espacio de seguimiento durante los tres años del bachillerato, documentando la evolución del proyecto desde el anteproyecto hasta el sistema final.</p>
+
+        <h3>Alcance en esta etapa</h3>
+        <p>En esta primera etapa, el sitio se limita a <strong>informar</strong> sobre actividades, eventos, horarios y los bachilleratos técnicos de la institución. <strong>No se publican notas ni datos personales de estudiantes</strong>: esa funcionalidad queda prevista para 2º y 3º año, cuando se analice la protección de datos correspondiente.</p>
 
         <h3>Viabilidad</h3>
         <ul>
@@ -196,28 +213,57 @@
             <div class="card">
                 <h4>Danna Elizabeth Alonso Bernal</h4>
                 <div class="rol">front-end</div>
-                <p>Abarca la experiencia del usuario.</p>
+                <p>Maquetación y diseño visual del sitio: estructura de las páginas, colores y estilos en CSS
             </div>
             <div class="card">
                 <h4>Candela Anahí Bogado Nuñez</h4>
                 <div class="rol">Back-end</div>
-                <p>Maneja la logica del servidor.</p>
+                <p>Carga de contenidos, revisión de textos y preparación de los recursos (imágenes y enlaces) del sitio.</p>
             </div>
             <div class="card">
                 <h4>María Guadalupe Ramírez Centurión</h4>
                 <div class="rol">Full-stack</div>
-                <p>Abarca ambos aspectos, la logica del servidor y la experiencia del usuario.</p>
+                <p>Coordinación general del proyecto, integración de las partes y ensayo de la presentación final.</p>
             </div>
         </div>
 
         <h3>Metodología de trabajo</h3>
         <p>Organizamos nuestro trabajo en una <strong>carpeta compartida de Google Drive</strong>, con un tablero simple (Por hacer / En proceso / Terminado) y reuniones de coordinación semanales. El historial de versiones nos permite recuperar documentos ante cualquier error.</p>
+
+        <h3>Bitácora de avances</h3>
+        <table>
+            <tr>
+                <th>Fecha</th>
+                <th>Avance</th>
+                <th>Responsable</th>
+            </tr>
+            <tr>
+                <td>05/10/2026</td>
+                <td>Definición del tema y ficha del proyecto</td>
+                <td>Equipo completo</td>
+            </tr>
+            <tr>
+                <td>12/10/2026</td>
+                <td>Redacción del anteproyecto</td>
+                <td>Danna</td>
+            </tr>
+            <tr>
+                <td>19/10/2026</td>
+                <td>Estudio de viabilidad</td>
+                <td>Guadalupe</td>
+            </tr>
+            <tr>
+                <td>26/10/2026</td>
+                <td>Primera versión del sitio web</td>
+                <td>Candela</td>
+            </tr>
+        </table>
     </section>
 
 </main>
 
 <footer>
-    Proyecto de Promoción · 1º BATIN · Centro Educativo Departamental Municipal Miguela Rodríguez Araujo
+    Proyecto de Promoción · 1º BATIN · Centro Educativo Departamental Miguela Rodríguez Araujo
 </footer>
 
 <script>
