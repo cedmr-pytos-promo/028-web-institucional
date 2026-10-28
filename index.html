@@ -5,7 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sitio Web Institucional – Miguela Rodríguez Araujo</title>
     <style>
-        /* ===== ESTILOS ===== */
+        :root {
+            --petrol-blue: #124350;      /* Encabezado / cabecera */
+            --aqua-blue: #ee9f27;        /* Botones, enlaces, destacados */
+            --pale-aqua-grey: #e8f0f0;   /* Fondo general */
+            --charcoal: #1f2930;         /* Texto principal */
+            --rust-orange: #124350;      /* Títulos, acentos */
+        }
         * {
             margin: 0;
             padding: 0;
@@ -13,12 +19,12 @@
         }
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: #f4f6f8;
-            color: #2c3e50;
+            background-color: var(--pale-aqua-grey);
+            color: var(--charcoal);
             line-height: 1.6;
         }
         header {
-            background: #0a4d3c;
+            background-color: var(--petrol-blue);
             color: white;
             padding: 1.2rem 2rem;
             display: flex;
@@ -26,14 +32,16 @@
             align-items: center;
             flex-wrap: wrap;
             gap: 1rem;
+            box-shadow: 0 3px 10px rgba(18,67,80,0.3);
         }
         header h1 {
             font-size: 1.4rem;
             font-weight: 600;
+            color: white;
         }
         header .sub {
             font-size: 0.85rem;
-            opacity: 0.85;
+            color: var(--aqua-blue);
         }
         nav {
             display: flex;
@@ -44,12 +52,14 @@
             color: white;
             text-decoration: none;
             padding: 0.5rem 1rem;
-            border-radius: 6px;
+            border-radius: 20px;
             font-size: 0.9rem;
-            transition: background 0.2s;
+            transition: all 0.2s;
         }
         nav a:hover, nav a.activo {
-            background: #0d6b52;
+            background-color: var(--aqua-blue);
+            color: var(--petrol-blue);
+            font-weight: bold;
         }
         main {
             max-width: 900px;
@@ -58,10 +68,11 @@
         }
         .pagina {
             display: none;
-            background: white;
+            background-color: white;
             padding: 2rem;
-            border-radius: 10px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(18,67,80,0.12);
+            border-top: 4px solid var(--aqua-blue);
             animation: fade 0.3s;
         }
         .pagina.visible {
@@ -72,13 +83,13 @@
             to { opacity: 1; transform: translateY(0); }
         }
         h2 {
-            color: #0a4d3c;
+            color: var(--rust-orange);
             margin-bottom: 1rem;
-            border-bottom: 2px solid #0a4d3c;
+            border-bottom: 2px solid var(--aqua-blue);
             padding-bottom: 0.4rem;
         }
         h3 {
-            color: #0d6b52;
+            color: var(--petrol-blue);
             margin: 1.2rem 0 0.5rem;
         }
         p { margin-bottom: 1rem; }
@@ -86,12 +97,12 @@
         li { margin-bottom: 0.4rem; }
         .estado {
             display: inline-block;
-            background: #e8f5ee;
-            color: #0a4d3c;
+            background-color: var(--aqua-blue);
+            color: white;
             padding: 0.3rem 0.9rem;
             border-radius: 20px;
             font-size: 0.85rem;
-            font-weight: 600;
+            font-weight: bold;
             margin-bottom: 1rem;
         }
         .card-equipo {
@@ -101,19 +112,20 @@
             margin-top: 1rem;
         }
         .card {
-            background: #f8faf9;
-            border: 1px solid #e0e6e2;
-            border-radius: 8px;
+            background-color: var(--pale-aqua-grey);
+            border: 1px solid #d0e0e0;
+            border-radius: 10px;
             padding: 1.2rem;
+            border-top: 4px solid var(--rust-orange);
         }
         .card h4 {
-            color: #0a4d3c;
+            color: var(--petrol-blue);
             margin-bottom: 0.3rem;
         }
         .card .rol {
             font-size: 0.85rem;
-            color: #0d6b52;
-            font-weight: 600;
+            color: var(--rust-orange);
+            font-weight: bold;
             margin-bottom: 0.5rem;
         }
         table {
@@ -122,21 +134,25 @@
             margin: 1rem 0;
         }
         th, td {
-            border: 1px solid #dce3df;
+            border: 1px solid #d0e0e0;
             padding: 0.6rem;
             text-align: left;
             font-size: 0.9rem;
         }
         th {
-            background: #0a4d3c;
+            background-color: var(--petrol-blue);
             color: white;
+            font-weight: bold;
+        }
+        td {
+            background-color: var(--pale-aqua-grey);
         }
         footer {
             text-align: center;
             padding: 1.5rem;
-            color: #7f8c8d;
+            color: #7a9494;
             font-size: 0.85rem;
-            border-top: 1px solid #e0e6e2;
+            border-top: 1px solid #d0e0e0;
         }
         @media (max-width: 600px) {
             header { flex-direction: column; align-items: flex-start; }
@@ -196,6 +212,13 @@
             <li><strong>Técnica:</strong> contamos con el entorno BATIN_PYTHON_PORTABLE y los conocimientos de HTML, CSS y ofimática para esta primera etapa.</li>
             <li><strong>Legal:</strong> usamos solo software libre y respetamos la normativa vigente. La protección de la imagen de los estudiantes se rige por el Código Penal (Art. 144) y la Resolución 739/2020 del MEC.</li>
             <li><strong>Económica:</strong> el costo es prácticamente nulo, ya que usamos herramientas gratuitas y equipos del laboratorio.</li>
+        </ul>
+
+        <h3>Bachilleratos técnicos</h3>
+        <p>El sitio presenta los dos bachilleratos que ofrece la institución, cada uno con su identidad:</p>
+        <ul>
+            <li><strong style="color:var(--rust-orange);">Informática</strong> (naranja con detalles grises): orientación en programación y sistemas.</li>
+            <li><strong style="color:var(--petrol-blue);">Construcciones Civiles</strong> (gris con detalles naranjas): orientación en obras y edificación.</li>
         </ul>
 
         <h3>Plan a 3 años</h3>
