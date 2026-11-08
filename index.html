@@ -156,6 +156,9 @@
         }
         @media (max-width: 600px) {
             header { flex-direction: column; align-items: flex-start; }
+            table { display: block; overflow-x: auto; white-space: normal; }
+            nav { gap: 0.25rem; }
+            nav a { padding: 0.4rem 0.65rem; }
         }
     </style>
 </head>
@@ -187,7 +190,7 @@
             <li>Centralizar la información institucional en un solo lugar, accesible para todos.</li>
             <li>Brindar datos veraces y actualizados sobre actividades, eventos y horarios.</li>
             <li>Dar a conocer los bachilleratos técnicos disponibles (informática y construcciones civiles).</li>
-            <li>Ofrecer un apartado de información para docentes.</li>
+            <li>Ofrecer un apartado intranet tanto para alumnos como para docentes.</li>
         </ul>
 
         <h3>Nuestro compromiso</h3>
@@ -202,10 +205,29 @@
         <p>El centro educativo no cuenta con un sitio web oficial. Esta carencia limita los canales de comunicación formal y deja a la comunidad sin una fuente confiable de información sobre lo que sucede en la institución.</p>
 
         <h3>La propuesta</h3>
-        <p>Crear un <strong>sitio web institucional</strong> que funcione como un espacio de seguimiento durante los tres años del bachillerato, documentando la evolución del proyecto desde el anteproyecto hasta el sistema final.</p>
+        <p>Crear un <strong>sitio web institucional</strong> que funcione como un espacio de seguimiento que se desarrollará durante los tres años del bachillerato, documentando la evolución del proyecto desde el anteproyecto hasta el sistema final.</p>
 
         <h3>Alcance en esta etapa</h3>
         <p>En esta primera etapa, el sitio se limita a <strong>informar</strong> sobre actividades, eventos, horarios y los bachilleratos técnicos de la institución. <strong>No se publican notas ni datos personales de estudiantes</strong>: esa funcionalidad queda prevista para 2º y 3º año, cuando se analice la protección de datos correspondiente.</p>
+
+        <!-- Contenido agregado: delimitación de alcance y funcionalidades -->
+        <h3>Delimitación del alcance y funcionalidades</h3>
+        <p>En esta primera etapa, el proyecto comprende la definición conceptual del sitio web oficial, el estudio de viabilidad, la elaboración del anteproyecto, el sitio web de seguimiento y la presentación de lanzamiento. Todavía no incluye el desarrollo de un sistema funcional, la conexión a bases de datos ni operaciones reales con datos de usuarios.</p>
+        <h4 style="color:var(--petrol-blue); margin:0.8rem 0;">Alcance del proyecto</h4>
+        <ul>
+            <li>Definición del problema y de la propuesta de solución.</li>
+            <li>Estudio de viabilidad técnica, legal y económica.</li>
+            <li>Elaboración del anteproyecto escrito.</li>
+            <li>Publicación del sitio web de seguimiento y preparación de la presentación de lanzamiento.</li>
+        </ul>
+        <h4 style="color:var(--petrol-blue); margin:0.8rem 0;">Funcionalidades previstas del futuro sistema</h4>
+        <p>Las funcionalidades se organizaron mediante el método MoSCoW, priorizando lo que se desarrollará en cada año:</p>
+        <table>
+            <tr><th>Funcionalidad prevista</th><th>Prioridad</th><th>Año previsto</th></tr>
+            <tr><td>Información sobre inscripciones, exámenes de ingreso, introducción breve a los bachilleratos y contactos de la institución.</td><td>Debe tener</td><td>1º año</td></tr>
+            <tr><td>Información sobre actividades institucionales e introducción detallada a los bachilleratos.</td><td>Debe tener</td><td>2º año</td></tr>
+            <tr><td>Apartado intranet para docentes y alumnos.</td><td>Debe tener</td><td>3º año</td></tr>
+        </table>
 
         <h3>Viabilidad</h3>
         <ul>
@@ -213,6 +235,16 @@
             <li><strong>Legal:</strong> usamos solo software libre y respetamos la normativa vigente. La protección de la imagen de los estudiantes se rige por el Código Penal (Art. 144) y la Resolución 739/2020 del MEC.</li>
             <li><strong>Económica:</strong> costará un aproximado de 420000gs anuales debido al costo total de dominio, hosting y SSL.</li>
         </ul>
+
+        <!-- Contenido agregado: tabla de viabilidad económica -->
+        <h4 style="color:var(--petrol-blue); margin:0.8rem 0;">Detalle de costos</h4>
+        <table>
+            <tr><th>Herramientas</th><th>Costos anuales</th><th>Costos mensuales</th></tr>
+            <tr><td>Dominio (NIC.py)</td><td>150.000 ₲</td><td>12.500 ₲</td></tr>
+            <tr><td>Hosting (HOSTINGPARAGUAY)</td><td>120.000 ₲</td><td>10.000 ₲</td></tr>
+            <tr><td>SSL (Secure Sockets Layer)</td><td>150.000 ₲</td><td>12.500 ₲</td></tr>
+            <tr><th>Total</th><th>420.000 ₲</th><th>35.000 ₲</th></tr>
+        </table>
 
         <h3>Bachilleratos técnicos</h3>
         <p>El sitio presenta los dos bachilleratos que ofrece la institución, cada uno con su identidad:</p>
@@ -227,6 +259,88 @@
             <li><strong>2º año:</strong> prototipo funcional y actualización del sitio con evidencias.</li>
             <li><strong>3º año:</strong> sistema final, documentación técnica y defensa.</li>
         </ol>
+
+        <hr>
+        <h3>Sitio web de seguimiento del proyecto</h3>
+<p>Este sitio funciona como un espacio de seguimiento o portafolio digital que acompaña el proyecto durante los tres años del bachillerato, documentando su evolución desde el anteproyecto hasta el sistema final.</p>
+
+        <h3>Estructura general del sitio</h3>
+        <ul>
+            <li><strong>Inicio:</strong> título del proyecto, resumen breve y estado actual (Etapa 1 de 3 – Anteproyecto).</li>
+            <li><strong>Descripción del proyecto:</strong> problema, propuesta y objetivos, que se actualizarán cada año.</li>
+            <li><strong>Bitácora de avances:</strong> entradas fechadas por año y etapa, con evidencias como capturas, enlaces y videos.</li>
+            <li><strong>Equipo:</strong> integrantes y roles, con actualización si el equipo cambia.</li>
+            <li><strong>Estudio de viabilidad:</strong> resumen de la viabilidad técnica, legal y económica.</li>
+        </ul>
+
+        <h3>Plan de actualización por año</h3>
+        <p>El sitio se actualizará al cierre de cada etapa, incorporando nuevas evidencias sin eliminar el contenido de los años anteriores, para que se pueda observar la evolución completa del proyecto.</p>
+        <table>
+            <tr><th>Año</th><th>Qué se agrega al sitio</th><th>Evidencia esperada</th></tr>
+            <tr><td>1º año</td><td>Anteproyecto resumido, resultado del estudio de viabilidad y primeras capturas de diseño e identidad visual.</td><td>Página “Acerca del proyecto” y bitácora inicial.</td></tr>
+            <tr><td>2º año</td><td>Capturas y video breve del prototipo funcional, fragmentos de código destacados y aprendizajes del proceso.</td><td>Entrada de bitácora “Prototipo” y galería de capturas.</td></tr>
+            <tr><td>3º año</td><td>Documentación técnica del sistema final, video de demostración, reflexión de cierre y defensa.</td><td>Entrada de bitácora “Sistema final” y enlace a la documentación técnica.</td></tr>
+        </table>
+
+        <h3>Mantenimiento y responsabilidades</h3>
+        <ul>
+            <li>El sitio se publicará mediante GitHub Pages, sin costo y sin necesidad de un servidor propio.</li>
+            <li>Se realizará una actualización mínima una vez por etapa/año, además de los hitos relevantes.</li>
+            <li>El equipo será responsable de revisar, mantener y actualizar los contenidos y las evidencias del proyecto.</li>
+        </ul>
+        <h3>Datos técnicos de la etapa actual</h3>
+        <ul>
+            <li><strong>Herramientas utilizadas:</strong> HTML y CSS.</li>
+            <li><strong>Páginas incluidas:</strong> Inicio, El proyecto y Equipo.</li>
+        </ul>
+
+        <hr>
+        <h3>Cronograma del proyecto</h3>
+<h3>Cronograma detallado – 1ª etapa</h3>
+        <table>
+            <tr><th>Actividad</th><th>Mes</th><th>Responsable</th><th>Entregable</th></tr>
+            <tr><td>Definición del tema y ficha de proyecto</td><td>Julio</td><td>Equipo completo</td><td>Ficha de proyecto aprobada.</td></tr>
+            <tr><td>Estudio de viabilidad (técnica, legal y económica)</td><td>Agosto</td><td>Equipo completo</td><td>Estudio de viabilidad documentado.</td></tr>
+            <tr><td>Redacción del anteproyecto</td><td>Agosto – septiembre – octubre</td><td>Equipo completo</td><td>Anteproyecto formateado.</td></tr>
+            <tr><td>Desarrollo del sitio de seguimiento (HTML/CSS)</td><td>Octubre</td><td>Diseño web</td><td>Sitio con 3 o más páginas.</td></tr>
+            <tr><td>Publicación en GitHub Pages y QR</td><td>Octubre</td><td>Diseño web</td><td>URL publicada y código QR.</td></tr>
+            <tr><td>Presentación de lanzamiento</td><td>Noviembre</td><td>Todo el equipo</td><td>Presentación PPT y demostración en ICIENTEC.</td></tr>
+        </table>
+
+        <h3>Cronograma extendido – Proyecto de Promoción (3 años)</h3>
+        <table>
+            <tr><th>Año</th><th>Etapa (nivel)</th><th>Actividades clave</th><th>Producto clave</th><th>Evento de cierre / Fecha</th></tr>
+            <tr>
+                <td>1º año (actual)</td>
+                <td>Análisis y Validación (N3 → N5)</td>
+                <td>Definición del problema, estudio de viabilidad, anteproyecto y sitio de seguimiento (versión inicial).</td>
+                <td>Anteproyecto aprobado.</td>
+                <td>Noviembre 2026</td>
+            </tr>
+            <tr>
+                <td>1º año (actual)</td>
+                <td>Diseño y Desarrollo</td>
+                <td>Publicar como página principal del sitio fechas de exámenes de ingreso, inscripciones y datos de la institución educativa.</td>
+                <td>Página principal del sitio.</td>
+                <td>Noviembre 2026</td>
+            </tr>
+            <tr>
+                <td>2º año</td>
+                <td>Diseño y Desarrollo (N3 → N5)</td>
+                <td>Desarrollo del producto ICIENTEC según la adecuación curricular vigente de 2º BATIN (mini-juego educativo en Pygame Zero/Python) y actualización del sitio con evidencias del prototipo.</td>
+                <td>Prototipo funcional.</td>
+                <td>ICIENTEC – Demostración</td>
+            </tr>
+            <tr>
+                <td>3º año</td>
+                <td>Implementación y Evaluación (N4 → N6)</td>
+                <td>Sistema de escritorio (interfaz Swing + base de datos SQLite vía JDBC) según la adecuación curricular vigente de 3º BATIN; documentación técnica final del sitio.</td>
+                <td>Sistema implementado y defensa formal.</td>
+                <td>ICIENTEC – Defensa final</td>
+            </tr>
+        </table>
+        <p>El proyecto de promoción se desarrolla a lo largo de los tres años del bachillerato, con una etapa correspondiente por año, según el ciclo institucional del Proyecto de Promoción BATIN.</p>
+
     </section>
 
     <!-- ===== PÁGINA 3: EQUIPO ===== -->
@@ -284,6 +398,7 @@
             </tr>
         </table>
     </section>
+
 
 </main>
 
